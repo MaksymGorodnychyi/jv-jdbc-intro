@@ -25,7 +25,7 @@ public class Main {
         createBook.setTitle("Effective Java Third Edition");
         createBook.setPrice(new BigDecimal("49.90"));
 
-        Book updateBook = bookDao.update(book);
+        Book updateBook = bookDao.update(createBook);
         System.out.println("Updated book: " + updateBook);
 
         boolean delete = bookDao.deleteById(createBook.getId());
