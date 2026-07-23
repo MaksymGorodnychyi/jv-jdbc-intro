@@ -20,6 +20,7 @@ public class Main {
         System.out.println(
                 "Found by id: " + bookDao.findById(createBook.getId())
         );
+        System.out.println("All books: " + bookDao.findAll());
 
         createBook.setTitle("Effective Java Third Edition");
         createBook.setPrice(new BigDecimal("49.90"));
